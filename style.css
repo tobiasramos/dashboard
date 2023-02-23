@@ -1,0 +1,76 @@
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2 {
+width: 150px;
+height: 150px;
+position: absolute;
+border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #CE9FFC;
+  }
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(143deg);
+  }
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(143deg);
+    }
+  }
+
+.mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #DF9780;
+  }
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(117deg);
+  }
+  @keyframes fill-2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(117deg);
+    }
+  }
+
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #4A4556;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: #212020;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
