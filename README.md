@@ -2,7 +2,7 @@
 
  Projeto do bora codar, fiz com o ituito de colocar minhas técnicas de bootstrap na prática
 
- <img src="" alt="Gif da Dashbord">
+ <img src="./tela.gif" alt="Gif da Dashbord">
 
 
  ## Tecnologia utilizadas
